@@ -19,6 +19,14 @@ async function main() {
       description: '',
     },
   });
+  prisma.vote.findUnique({
+    where: {
+      linkId_userId: {
+        linkId: 1,
+        userId: 1,
+      },
+    },
+  });
 }
 
 main()

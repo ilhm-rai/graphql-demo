@@ -9,6 +9,7 @@ const Mutation = require('./resolvers/Mutation');
 const Subscription = require('./resolvers/Subscription');
 const User = require('./resolvers/User');
 const Link = require('./resolvers/Link');
+const Vote = require('./resolvers/Vote');
 
 const typeDefs = gql`
   type Query {
@@ -90,6 +91,7 @@ const resolvers = {
   Subscription,
   User,
   Link,
+  Vote,
 };
 
 const prisma = new PrismaClient();
